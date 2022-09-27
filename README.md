@@ -28,6 +28,8 @@ WIP
 
 WIP
 
+* API: [IGDB API Documentation](https://api-docs.igdb.com/#about)
+
 ### Future Development
 
 WIP
