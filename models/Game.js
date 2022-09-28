@@ -14,7 +14,7 @@ Game.init(
         },
         title: {
             type: DataTypes.STRING,
-            allowNull:false,
+            allowNull: false,
         },
         publisher: {
             type: DataTypes.STRING,
