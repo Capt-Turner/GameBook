@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models/User');
+const axios = require('axios').default;
+const { User, Game } = require('../../models/User');
 
 router.post('/login', async (req,res) => {
     try {
@@ -40,6 +41,6 @@ router.post('/login', async (req,res) => {
         } else {
           res.status(404).end();
         }
-    });
+});
       
 module.exports = router;

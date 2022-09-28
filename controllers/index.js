@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const axios = require('axios').default;
 const apiRoutes = require('./api');
 const homeRoutes = require('./homeRoutes');
 
