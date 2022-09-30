@@ -1,5 +1,6 @@
 const router = require('express').Router();
-const userRouters = require('./userRoutes');
+const axios = require('axios').default;
+const userRoutes = require('./userRoutes');
 
 router.use('/users', userRoutes);
 
