@@ -36,8 +36,8 @@ router.get('/', async (req,res) => {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
-      'Client-ID': 'zdya2d3e1t6iad3gj9jkwjjg5fckfq',
-      'Authorization': 'Bearer c1v7yfzd95q34m3ced4sqgc4uj7epb',
+      'Client-ID': '',
+      'Authorization': '',
     },
     data: "fields cover,name,screenshots,websites;"
   })
