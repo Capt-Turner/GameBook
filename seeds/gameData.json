@@ -1,10 +1,10 @@
 [
     {
         "title": "test title",
-        "publiser": "test pub"
+        "publisher": "test pub"
     },
     {
         "title": "test title2",
-        "publiser": "test pub2"
+        "publisher": "test pub2"
     }
 ]

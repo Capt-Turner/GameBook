@@ -13,7 +13,16 @@
         "express": "^4.17.1",
         "express-handlebars": "^5.2.0",
         "mysql2": "^2.2.5",
+<<<<<<< HEAD
         "node-fetch": "^3.2.10",
         "sequelize": "^6.3.5"
     }
 }
+=======
+        "sequelize": "^6.3.5",
+        "express-session": "^1.17.1",
+        "axios": "^0.27.2",
+        "connect-session-sequelize": "^7.0.4"
+}
+}
+>>>>>>> 05bf73b8b2591a780b25c838e5aa89812916181a
