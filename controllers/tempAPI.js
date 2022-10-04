@@ -38,8 +38,8 @@ const options = {
   method: 'POST',
   url: 'https://api.igdb.com/v4/games',
   headers: {
-    'Client-ID': 'zdya2d3e1t6iad3gj9jkwjjg5fckfq',
-    Authorization: 'bearer 4gilqa55x0teggl168rgf1nbsk3hck',
+    'Client-ID': '',
+    Authorization: 'Bearer',
     'Content-Type': 'text/plain'
   },
   data: 'fields *;\nwhere id = 85450;'

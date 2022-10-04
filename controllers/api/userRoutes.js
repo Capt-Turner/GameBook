@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const axios = require('axios').default;
-const { User, Game } = require('../../models/User');
+const { User, Game } = require('../../models');
 
 router.post('/login', async (req,res) => {
     try {
@@ -12,24 +12,25 @@ router.post('/login', async (req,res) => {
             return;
           }
 
-        const validPassword = await userData.checkPassword(req.body.password);
-
+        const validPassword = await userData.checkPassword(req.body.pw);
+      
+        console.log(userData.id);
         if (!validPassword) {
             res
-            .status(400)
+            .status(401)
             .json({ message: 'Incorrect email or password, please try again' });
           return;
         }
-
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
+            console.log("sup");
             
             res.json({ user: userData, message: 'Welcome to GameBook!' });
           });
       
         } catch (err) {
-          res.status(400).json(err);
+          res.status(402).json(err);
         }
       });
       
