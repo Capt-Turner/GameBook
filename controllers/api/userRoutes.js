@@ -2,6 +2,25 @@ const router = require('express').Router();
 const axios = require('axios').default;
 const { User, Game } = require('../../models');
 
+// router.post('/', async (req, res) => {
+//   try {
+//     const dbUserData = await User.create({
+//       username: req.body.name,
+//       email: req.body.email,
+//       password: req.body.pw,
+//     });
+
+//     req.session.save(() => {
+//       req.session.loggedIn = true;
+
+//       res.status(200).json(dbUserData);
+//     });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
+
 router.post('/login', async (req,res) => {
     try {
         const userData = await User.findOne({where: {email: req.body.email}});
@@ -24,7 +43,6 @@ router.post('/login', async (req,res) => {
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
-            console.log("sup");
             
             res.json({ user: userData, message: 'Welcome to GameBook!' });
           });
@@ -43,5 +61,5 @@ router.post('/login', async (req,res) => {
           res.status(404).end();
         }
 });
-      
+
 module.exports = router;
