@@ -36,8 +36,8 @@ router.get('/', async (req,res) => {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
-      'Client-ID': '',
-      'Authorization': '',
+      'Client-ID': process.env.CLIENT_ID,
+      'Authorization': process.env.TOKEN,
     },
     data: "fields cover,name,screenshots,websites;"
   })
