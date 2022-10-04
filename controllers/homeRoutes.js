@@ -19,37 +19,20 @@ router.get('/', withAuth, async (req, res) => {
     } catch (err) {
       res.status(500).json(err);
     }
-  });
+});
   
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
-      res.redirect('/');
+      res.redirect('/homepage');
       return;
     }
   
     res.render('login');
 });
-  
-router.get('/', async (req,res) => {
-  axios({
-    url: "https://api.igdb.com/v4/games",
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Client-ID': process.env.CLIENT_ID,
-      'Authorization': process.env.TOKEN,
-    },
-    data: "fields cover,name,screenshots,websites;"
-  })
-    .then(response => {
-      res.render('homepage', {
-        project:response.data,
-        logged_in: req.session.logged_in
-      });
-    })
-    .catch(err => {
-      console.error(err);
-    });
-})
 
+router.get('/browse', (req, res) => {
+
+});
+
+router.get('/')
 module.exports = router;
