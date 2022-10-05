@@ -1,8 +1,12 @@
 # ***GameBook***
 
-## Description:
+## Deployment
 
 WIP
+
+## Description:
+
+A vast gaming community where you and your friends can rate and review your favorite video games, check to see what others have to say, and argue online!
 
 ## User Stories:
 
@@ -14,7 +18,7 @@ WIP
 
 ## Screenshots/Demos
 
-WIP
+![First Successful Visual API Call](./README%20assets/MVP%20screenshot1.png) 
 
 ## Credits
 
@@ -26,10 +30,15 @@ WIP
 
 ### Tools
 
-WIP
-
-* API: [IGDB API Documentation](https://api-docs.igdb.com/#about)
+> #### API: [IGDB API Documentation](https://api-docs.igdb.com/#about)
+>
+> - An amazing resource with thousands of games and just about any kind of information on them you could ask for.
+> - As well as some very thorough docs that were helpful even outside of API calls.
+>
+> #### Axios: [Axios Documentation](https://axios-http.com/docs/intro)
 
 ### Future Development
 
-WIP
+>
+>
+>
