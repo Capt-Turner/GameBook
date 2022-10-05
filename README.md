@@ -24,9 +24,9 @@ A vast gaming community where you and your friends can rate and review your favo
 
 ### Collabroators
 
-* Seth Turner - --GitHub: [Capt-Turner](https://github.com/Capt-Turner)
-* Nathan Aramyan - --GitHub: [shniglehosen](https://github.com/shniglehosen)
-* Shannon Holland - --GitHub: [sm0526](https://github.com/sm0526)
+* Seth Turner - Routes/API, GitHub Guru, and README --GitHub: [Capt-Turner](https://github.com/Capt-Turner)
+* Nathan Aramyan - View/UX and Handlebars Construction --GitHub: [shniglehosen](https://github.com/shniglehosen)
+* Shannon Holland - Models/Auth, Routes/API, and Presentation --GitHub: [sm0526](https://github.com/sm0526)
 
 ### Tools
 
@@ -34,8 +34,10 @@ A vast gaming community where you and your friends can rate and review your favo
 >
 > - An amazing resource with thousands of games and just about any kind of information on them you could ask for.
 > - As well as some very thorough docs that were helpful even outside of API calls.
->
+
 > #### Axios: [Axios Documentation](https://axios-http.com/docs/intro)
+>
+> - Made API calls a breeze to implement and adjust.
 
 ### Future Development
 
