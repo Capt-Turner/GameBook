@@ -1,15 +1,13 @@
 <div class="card" style="width: 18rem;">
-    <a href="/game/{{id}}">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{name}}</h5>
-            <img src={{cover.url}} alt={{name}}" cover art">
-            <p class="card-text">Release Date: {{release_dates.date}}
-                    Synopsis: {{storyline}}
+    <img src="//images.igdb.com/igdb/image/upload/t_cover_big/{{cover.image_id}}.jpg" class="card-img-top" alt="{{name}} cover art">
+    <div class="card-body">
+        <h5 class="card-title">{{name}}</h5>
+        <p class="card-text">Synopsis: {{summary}}<br>
+            Release Date: {{release_dates.date}}
+                
 
-            </p>
+        </p>
                     
-            <a href="#" class="btn btn-primary">Review</a>
-        </div>
-    </a> 
-    </div>
+        <a href="#" class="btn btn-primary">Review</a>
+    </div> 
+</div>
