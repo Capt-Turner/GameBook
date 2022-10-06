@@ -26,7 +26,7 @@ A vast gaming community where you and your friends can rate and review your favo
 
 * Seth Turner - Routes/API, GitHub Guru, and README --GitHub: [Capt-Turner](https://github.com/Capt-Turner)
 * Nathan Aramyan - View/UX and Handlebars Construction --GitHub: [shniglehosen](https://github.com/shniglehosen)
-* Shannon Holland - Models/Auth, Routes/API, and Presentation --GitHub: [sm0526](https://github.com/sm0526)
+* Shanon Holland - Models/Auth, Routes/API, and Presentation --GitHub: [sm0526](https://github.com/sm0526)
 
 ### Tools
 
