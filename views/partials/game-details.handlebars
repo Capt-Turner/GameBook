@@ -4,11 +4,12 @@
         <div class="card-body">
             <h5 class="card-title">{{name}}</h5>
             <p class="card-text">Synopsis: {{summary}}<br>
-                Release Date: {{release_dates.date}}
-                    
+                Release Date: {{format_date first_release_date}}<br>
+                Platforms: {{#each platforms.name}}
+                    <li>{{this}}</li>
+                {{/each}}
 
-            </p>
-                        
+            </p>          
             <a href="#" class="btn btn-primary">Review</a>
         </div> 
     </div>
