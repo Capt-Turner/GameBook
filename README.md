@@ -1,4 +1,4 @@
-# ***GameBook***
+![GameBook Logo Courtesy of Alex Turner](./public/assets/GameBookFull.png)
 
 ## Deployment
 

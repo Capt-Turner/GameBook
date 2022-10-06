@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const axios = require('axios').default;
-const { User, Game } = require('../models');
+const { User, Game, Review } = require('../models');
 const withAuth = require('../utils/auth');
 const sequelize = require('../config/connection');
 
@@ -58,16 +58,6 @@ router.get('/homepage', async (req, res) => {
           console.error(err);
         });
   })
-  router.get('/game/:id', withAuth, async (req, res) => {
-    try {
-
-      const games = gameData.get({ plain: true });
-      res.render('browse', { games, loggedIn: req.session.loggedIn });
-    } catch (err) {
-      console.log(err);
-      res.status(500).json(err);
-    }
-  });
 
   router.get('/review', (req, res) => {
 
