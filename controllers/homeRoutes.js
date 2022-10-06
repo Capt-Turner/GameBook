@@ -33,6 +33,9 @@ router.get('/login', (req, res) => {
 
 router.get('/homepage', async (req, res) => {
   console.log("posting");
+  function getRand(max) {
+    return Math.floor(Math.random() * max);
+  }
   axios({
     url: "https://api.igdb.com/v4/games",
     method: 'POST',
@@ -41,7 +44,7 @@ router.get('/homepage', async (req, res) => {
       'Client-ID': process.env.CLIENT_ID,
       'Authorization': process.env.TOKEN,
     },
-    data: "fields cover.image_id,genres,involved_companies,keywords,name,parent_game,platforms,release_dates.date,screenshots,summary,tags,url,websites;"
+    data: `where id = (${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}); fields cover.image_id,genres,involved_companies,keywords,name,parent_game,platforms,release_dates.date,screenshots,summary,tags,url,websites;`
   })
     .then(response => {
       console.log(response.data);
