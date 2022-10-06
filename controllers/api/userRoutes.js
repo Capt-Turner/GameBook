@@ -2,24 +2,23 @@ const router = require('express').Router();
 const axios = require('axios').default;
 const { User, Game } = require('../../models');
 
-// router.post('/', async (req, res) => {
-//   try {
-//     const dbUserData = await User.create({
-//       username: req.body.name,
-//       email: req.body.email,
-//       password: req.body.pw,
-//     });
+router.post('/', async (req, res) => {
+  try {
+    const dbUserData = await User.create({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.pw,
+    });
 
-//     req.session.save(() => {
-//       req.session.loggedIn = true;
-
-//       res.status(200).json(dbUserData);
-//     });
-//   } catch (err) {
-//     console.log(err);
-//     res.status(500).json(err);
-//   }
-// });
+    req.session.save(() => {
+      req.session.loggedIn = true;
+      res.status(200).json(dbUserData);
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 router.post('/login', async (req,res) => {
     try {
