@@ -2,7 +2,7 @@
 
 ## Deployment
 
-WIP
+[GameBook Official Website](https://turnersgamereviewbook.herokuapp.com/)
 
 ## Description:
 
