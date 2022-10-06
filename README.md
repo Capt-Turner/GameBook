@@ -18,7 +18,13 @@ A vast gaming community where you and your friends can rate and review your favo
 
 ## Screenshots/Demos
 
+- Our first successful posting of games from the API.
+
 ![First Successful Visual API Call](./README%20assets/MVP%20screenshot1.png) 
+
+- After some formatting
+
+![Some Basic Formatting](./README%20assets/Formatted%20Example.png)
 
 ## Credits
 
