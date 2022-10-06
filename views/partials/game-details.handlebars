@@ -1,13 +1,30 @@
 <div class="col">
     <div class="card" style="width: 18rem;">
+        {{#if cover}}
         <img src="//images.igdb.com/igdb/image/upload/t_cover_big/{{cover.image_id}}.jpg" class="card-img-top" alt="{{name}} cover art">
+        {{else}}
+        <img src="../../public/assets/imageNA.png" class="card-img-top" alt="No image available" height="250" width="250">
+        {{/if}}
         <div class="card-body">
             <h5 class="card-title">{{name}}</h5>
-            <p class="card-text">Synopsis: {{summary}}<br>
-                Release Date: {{format_date first_release_date}}<br>
-                Platforms: {{#each platforms.name}}
-                    <li>{{this}}</li>
-                {{/each}}
+            <p class="card-text">{{#if summary}}
+                <strong>Synopsis</strong>: {{summary}}<br>
+                {{else}}
+                <strong>Synopsis</strong>: N/A <br>
+                {{/if}}
+                {{#if first_release_date}}
+                <strong>Release Date</strong>: {{format_date first_release_date}}<br>
+                {{else}}
+                <strong>Release Date</strong>: N/A <br>
+                {{/if}}
+                {{#if platforms}}
+                <strong>Platforms</strong>: {{#each platforms as |platform|}}
+                    {{platform.name}},
+                {{/each}}<br>
+                {{/if}}
+                {{#if websites}}
+                <a href={{websites.0.url}}><strong>Website</strong></a>
+                {{/if}}
 
             </p>          
             <a href="#" class="btn btn-primary">Review</a>
