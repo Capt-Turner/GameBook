@@ -44,10 +44,10 @@ router.get('/homepage', async (req, res) => {
       'Client-ID': process.env.CLIENT_ID,
       'Authorization': process.env.TOKEN,
     },
-    data: `where id = (${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}); fields cover.image_id,genres,involved_companies,keywords,name,parent_game,platforms.name,first_release_date,screenshots,summary,tags,url,websites;`
+    data: `where id = (${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}, ${getRand(212275)}); fields cover.image_id,genres,involved_companies,keywords,name,parent_game,platforms.*,first_release_date,screenshots,summary,tags,url,websites.*;`
   })
     .then(response => {
-      console.log(response.data);
+      console.dir(response.data);
       gameData = response.data;
       res.render('homepage', {
         gameData,
