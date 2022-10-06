@@ -36,17 +36,21 @@ A vast gaming community where you and your friends can rate and review your favo
 
 ### Tools
 
-> #### API: [IGDB API Documentation](https://api-docs.igdb.com/#about)
+> #### IGDB API: [Documentation](https://api-docs.igdb.com/#about)
 >
 > - An amazing resource with thousands of games and just about any kind of information on them you could ask for.
 > - As well as some very thorough docs that were helpful even outside of API calls.
 
-> #### Axios: [Axios Documentation](https://axios-http.com/docs/intro)
+> #### Axios: [Documentation](https://axios-http.com/docs/intro)
 >
 > - Made API calls a breeze to implement and adjust.
 
 ### Future Development
 
+> v1.0: Users able to view and post reviews of games on site.
 >
+> v1.1: Search implementation
 >
+> v1.2: Polish UI 
 >
+> v1.3: Scale/percentage rating system
